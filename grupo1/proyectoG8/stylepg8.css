@@ -51,27 +51,56 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-nav {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  padding-bottom: 0;
-  padding-right: 190px;
+.header__search {
+    position: absolute;
+    left: 48%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+.search__input{
+    outline: none;
+    box-sizing: border-box;
+    width: 400px;
+    height: 60px;
+    padding: 0 20px;
+    color: black;
+    border-radius: 20px;
+    font-family: 'Arbutus Slab';
+    font-size: 20px;
+    border: 1px solid #7b920a;
+    transition: ali .8s ease;
+}
+::placeholder{
+    color: #7b920a ;
 }
 
-header a {
-  /* Carrito de Compra */
-  text-decoration: none;
-  width: 137px;
-  height: 19px;
-  top: 51px;
-  font-family: "Arbutus Slab";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 129px;
-  /* identical to box height */
-
-  color: #ffffff;
+.header__search:hover input {
+    width: 500px;
 }
+
+.nav__{
+    display: flex;
+    font-family: "Arbutus Slab";
+    font-size: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 100px;
+  }
+  
+ .nav__car {
+    display: inline;
+    padding: 30px 70px 0px 0px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .nav__cuenta {
+    display: block;
+    padding: 30px 0px 0px 0px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+
