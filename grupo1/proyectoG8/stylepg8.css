@@ -3,11 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   min-height: 100%;
   max-width: 100%;
@@ -15,7 +13,7 @@ body {
 body {
   font-family: "Roboto", sans-serif;
 }
-
+/*-------------------------------------- HEADER -------------------------------*/
 .header {
   position: absolute;
   width: 100%;
@@ -38,7 +36,6 @@ body {
   color: #f6b900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .header__img {
   position: absolute;
   width: 72px;
@@ -47,7 +44,6 @@ body {
   top: 2px;
   border-radius: 150px;
 }
-
 .header__container {
   display: flex;
   flex-direction: row;
@@ -77,28 +73,25 @@ body {
 ::placeholder {
   color: #7b920a;
 }
-
 .header__search:hover input {
   width: 390px;
 }
-
 .icono__ {
   display: flex;
   list-style-type: none;
   padding-right: 0px;
 }
-
 .icono__car {
   display: inline;
   position: absolute;
-  left: 80%;
+  left: 1110px;
   top: 18%;
   padding: 10px;
 }
 .icono__cuenta {
   display: inline;
   position: absolute;
-  left: 88%;
+  left: 1200px;
   top: 18%;
   padding: 10px;
 }
@@ -106,12 +99,12 @@ body {
   position: absolute;
   width: 100%;
   height: 60px;
-  top: 75px;
+  top: 78px;
   background: rgb(255, 191, 0);
   margin-top: 15px;
 }
 .nav__main {
-  margin-top: 10px;
+  margin-top: 12px;
   list-style: none;
   padding-left: 10px;
   display: flex;
@@ -130,19 +123,20 @@ body {
 .nav-main_item a:active {
   color: red;
 }
+/*----------------------------------- Seccion Descripcion -------------------------------*/
 .descripcion {
   position: absolute;
   width: 100%;
   height: 347px;
   left: 0px;
-  top: 150px;
+  top: 153px;
   background: url(mediapg8/image1.png);
 }
 .descripcion_h1 {
   position: absolute;
   width: 347px;
   height: 108px;
-  left: 1050px;
+  left: 1000px;
   top: 65px;
   font-family: "Aclonica";
   font-style: normal;
@@ -152,3 +146,46 @@ body {
   color: #ffbf00;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/*--------------------------------------- Seccion Inicio ---------------------------------*/
+.inicio {
+  position: absolute;
+  display: flex;
+  top: 500px;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
+  margin: 0;
+  padding: 20px 0px 0px 150px;
+  justify-items: center;
+}
+/* .inicio__carnes {
+  position: absolute;
+  width: 255px;
+  height: 237px;
+  left: 103px;
+  top: 529px;
+  background: url(./mediapg8/carne.png);
+  border-radius: 20px;
+}
+.inicio_c-h2 {
+  position: absolute;
+  width: 176px;
+  height: 45px;
+  left: 141px;
+  top: 572px;
+  font-family: "Aclonica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.inicio__lacteos {
+  position: absolute;
+  width: 255px;
+  height: 237px;
+  left: 433px;
+  top: 529px;
+
+  border-radius: 20px;
+} */
