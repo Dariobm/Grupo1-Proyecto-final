@@ -19,7 +19,7 @@ body {
 .header {
   position: absolute;
   width: 100%;
-  height: 99px;
+  height: 110px;
   left: 0px;
   top: 0px;
   background: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
@@ -27,45 +27,38 @@ body {
 .header_h1 {
   position: absolute;
   width: 154px;
-  left: 148px;
+  left: 178px;
   top: 25px;
   font-family: "Aclonica";
   font-size: 28px;
   line-height: 25px;
   color: #f6b900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
 }
-
-/*.header_r{
-  position:absolute;
-  font-family:"Aclonica";
-  text-align: right;}*/
-
-
 .header__img {
   position: absolute;
-  width: 72px;
-  height: 73px;
+  width: 78px;
+  height: 78px;
   left: 60px;
   top: 15px;
-  border-radius: 34.5px;
+  border-radius: 50%;
+  margin: 0;
 }
-
 .header__container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-
 nav {
   display: flex;
   flex-direction: row;
   text-align: center;
   padding-bottom: 0;
   padding-right: 190px;
+  margin: 0;
 }
-
 header a {
   padding: 30px 35px;
   text-decoration: none;
@@ -94,9 +87,12 @@ header a {
 }
 .descripcion__p {
   color: rgb(15, 14, 14);
+  width: 1350px;
+  height: 300px;
   padding: 60px 150px 30px 650px;
   font-size: 26px;
   font-family: "Aclonica";
+  margin: 0;
 }
 .descripcion__button {
   font-size: 26px;
@@ -116,6 +112,9 @@ header a {
   box-sizing: border-box;
   padding: 120px 0px 0px 100px;
   display: inline-block;
+}
+.presentar_grupo{
+  width: 1250px;
 }
 .presentar_h1 {
   font-weight: bold;
