@@ -17,11 +17,14 @@
     --lg: 18px;
   }
 body{
-    margin: 0;
-    font-family: "Quicksand", sans-serif;
+    
 }
 #body{
-    background-image: image();
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    background-image: url("Media/imagen1.png");
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 .registro {
     width: 100%;
@@ -84,6 +87,9 @@ body{
     margin-top: 14px;
     margin-bottom: 30px;
 }
+h1{
+    text-align: center;
+}
 
     </style>
 </head>
@@ -92,6 +98,7 @@ body{
         <div class="form-container">
 
             <form action="/" class="form"> 
+                <h1>Registro</h1>
 
                 <legend>Crea una cuenta de <b>Agrocog Colombia</b></legend><br>
 
@@ -104,7 +111,7 @@ body{
                 <label for="password" class="label">Contraseña</label>
                 <input type="password" id="password" placeholder="***" class="input input-password" required>
 
-                <input type="submit" value="Crear Contraseña" class="primary-button Crear-button">
+                <input type="submit" value="Crear Cuenta" class="primary-button Crear-button">
             
             </form>
 
