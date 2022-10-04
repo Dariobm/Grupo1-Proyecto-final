@@ -49,6 +49,12 @@ body{
     margin-bottom: 52px;
 
 }
+.legend {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: center;
+}
 .label {
     font-size: var(--sm);
     font-weight: bold;
@@ -109,18 +115,17 @@ body{
 <body>
     <div class="login">
         <div class="form-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo"
-            class="logo">
 
             <form action="/" class="form">
-                <label for="email" class="label">Email address</label>
-                <input type="text" id="email" placeholder="dario@example.com" class="input input-email">
+                <legend class="legend"><b>Inicia sesión</b></legend><br>
+                <label for="email" class="label">Correo Electronico</label>
+                <input type="text" id="email" placeholder="Ejemplo@example.com" class="input input-email" required>
 
-                <label for="password" class="label">Password</label>
-                <input type="password" id="password" placeholder="***" class="input input-password">
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="***" class="input input-password" required>
 
-                <input type="submit" value="Log in" class="primary-button login-button">
-                <a href="/">Forgot my password</a>
+                <input type="submit" value="Log in" class="primary-button login-button" required>
+                <a href="/">¿Has olvidado tu contraseña?</a>
             </form>
 
             <button class="secondary-button signup-button">Sign up</button>
