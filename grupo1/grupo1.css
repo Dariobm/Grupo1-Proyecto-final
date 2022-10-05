@@ -181,3 +181,28 @@ header a {
     padding: 0px 90px;
     margin: 0px 60px 30px 150px;
   }
+
+  .footer{
+    background: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
+    width: 100%;
+    height: 99px;
+    left: 0px;
+    top: 0px;
+   
+  }
+  
+  .footer img{
+  position: absolute;
+  width: 72px;
+  height: 73px;
+  left: 60px;
+  top: 15px;
+  border-radius: 34.5px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
