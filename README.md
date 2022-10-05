@@ -3,8 +3,12 @@
  En este proyecto vamos a ver reflejado el proyecto realizado con figma de nuestro primer corte.
  Los integrantes que conforman este Proyecto son:
 
- Josè Dario Bonilla Muñoz
- Encargado de realizar: 
+ Josè Dario Bonilla Muñoz 
+ Lider De Equipo
+ Encargado de realizar:
+ 1. Pagina de presentacion
+ 2. Index de la pagina
+
  
  
  Yohan Andres Chalaca
@@ -13,3 +17,4 @@
 
  Leinys Marìa Orozco Sayas 
  Encargada de realizar:
+ 1. Formulario de login y registro
