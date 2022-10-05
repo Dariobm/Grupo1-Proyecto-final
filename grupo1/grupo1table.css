@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root{
+    --gren: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --yellow: hsl(45, 100%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
