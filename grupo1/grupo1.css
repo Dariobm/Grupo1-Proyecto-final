@@ -3,52 +3,60 @@
   margin: 0;
   padding: 0;
 }
-
+:root {
+  --color-principal: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
+  --color-titulos: #f6b900;
+  --color-h2: rgb(255, 255, 255);
+  --color-parrafo: rgb(15, 14, 14);
+  --h1: 28px;
+  --parrafo: 25px;
+  --presentacion-480: 14px;
+  --presentacion-640px: 17px;
+  --presentacion: 20px;
+  --color-hover:rgb(56, 250, 31);
+  
+}
 html {
   scroll-behavior: smooth;
 }
-
 body {
-  min-height: 100%;
-  max-width: 100%;
+  font-family: "Aclonica";
 }
-body {
-  font-family: "Roboto", sans-serif;
+/* -------------------------Header--------------------- */
+header a:hover{
+  color: var(--color-hover);
 }
-
 .header {
   position: absolute;
   width: 100%;
-  height: 110px;
-  left: 0px;
+  height: 17%;
   top: 0px;
-  background: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
-}
-.header_h1 {
-  position: absolute;
-  width: 154px;
-  left: 178px;
-  top: 25px;
-  font-family: "Aclonica";
-  font-size: 28px;
-  line-height: 25px;
-  color: #f6b900;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: var(--color-principal);
   margin: 0;
-}
-.header img {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  left: 50px;
-  top: 12px;
-  border-radius: 50%;
 }
 .header__container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.header img {
+  position: absolute;
+  width: 6%;
+  height: 65%;
+  left: 3%;
+  top: 12px;
+  border-radius: 50%;
+}
+.header_h1 {
+  position: absolute;
+  width: 10%;
+  left: 12%;
+  top: 20%;
+  font-family: "Aclonica";
+  font-size: var(--h1);
+  line-height: 25px;
+  color: var(--color-titulos);
 }
 nav {
   display: flex;
@@ -59,20 +67,22 @@ nav {
   margin: 0;
 }
 header a {
-  padding: 30px 35px;
+  padding: 22% 10%;
   text-decoration: none;
   font-weight: bold;
   font-family: "Aclonica";
-  font-size: 30px;
-  color: rgb(255, 255, 255);
+  font-size: var(--h1);
+  color: var(--color-h2);
 }
+/* -------------------------Seccion presentacion de la empresa--------------------- */
 .descripcion {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
   flex-direction: column;
-  height: 83vh;
+  width: 100%;
+  height: 85vh;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.1),
@@ -82,130 +92,270 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin: 95px 0px 0px 0px;
+  margin: 5% 0 0 0;
 }
 .descripcion__p {
   color: rgb(15, 14, 14);
-  width: 1350px;
-  height: 300px;
-  padding: 60px 150px 30px 650px;
-  font-size: 26px;
-  font-family: "Aclonica";
-  margin: 0;
+  width: 95%;
+  height: 55%;
+  padding: 10% 13% 5% 43%;
+  font-size: var(--parrafo);
+}
+.descripcion__button:hover{
+  cursor: pointer;
+  box-shadow: 10px 5px 5px;
+  transition: 500ms;
+  margin-top: 100px;
 }
 .descripcion__button {
-  font-size: 26px;
+  font-size: var(--parrafo);
   font-weight: bold;
   font-family: "Aclonica";
   padding: 10px 30px;
-  margin: 0px 10px 10px 500px;
+  margin: 50% 100%;
   border-radius: 15px;
   border: 2px solid rgba(0, 0, 0, 0.3);
   box-shadow: 5px 2px 20px rgb(255, 255, 255);
-  color: white;
-  background: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
+  color: var(--color-h2);
+  background: var(--color-principal);
 }
+/* ---------------------------seccion presentacion de integrantes-------------------------- */
 .cards {
   width: 100%;
   height: auto;
-  box-sizing: border-box;
-  padding: 120px 0px 0px 100px;
-  display: inline-block;
-}
-.cards_container{
-  width: 1250px;
+  padding: 10% 0 10% 10%;
 }
 .cards_h1 {
-  font-weight: bold;
-  font-family: "Aclonica";
   text-align: center;
-  font-size: 30px;
+  font-size: var(--h1);
   color: rgb(0, 0, 0);
 }
-.card_db {
-  text-align: justify;
-  padding: 0px 400px 0px 0px;
-  justify-content: normal;
+.card {
+  font-size: var(--presentacion);
   display: flex;
-  bottom: 180deg;
-  font-size: 20px;
-  font-family: "Aclonica";
+  justify-content: normal;
+  text-align: justify;
+}
+.card_db {
+  padding: 0 25% 0 0;
 }
 .card_img {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 5, 0)),
-    url("media/dario.png");
   background-size: cover;
   background-position: center center;
   height: 300px;
   width: 450px;
-  padding: 0px 0px 0px 200px;
-  margin: 0px 60px 30px 100px;
 }
-.presentar_yc {
-    text-align: justify;
-    padding: 0px 300px 0px 180px;
-    justify-content: normal;
-    display: flex;
-    bottom: 180deg;
-    font-size: 25px;
-    font-family: "Aclonica";
-  }
-  .presentar_img2 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 5, 0)),
-      url("media/yohan.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 450px;
-    padding: 10px 30px;
-    margin: 0px 70px 0px 50px;
-  }
-  .presentar_lo {
-    text-align: justify;
-    padding: 0px 360px 0px 0px;
-    justify-content: normal;
-    display: flex;
-    bottom: 180deg;
-    font-size: 25px;
-    font-family: "Aclonica";
-  }
-  .presentar_img3 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 5, 0)),
-      url("media/leynis.png");
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 450px;
-    padding: 0px 90px;
-    margin: 0px 60px 30px 150px;
-  }
-  footer{
-    position: absolute;
+.cards_img1 {
+  background-image: url("media/dario.png");
+  padding: 0 0 0 20%;
+  margin: 0 8% 0 9%;
+}
+.card_yc {
+  padding: 0 20% 0 12%;
+}
+.cards_img2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 5, 0)),
+    url("media/yohan.png");
+  padding: 0 0 0 20%;
+  margin: 0 5% 0 10%;
+}
+.card_lo {
+  padding: 0 25% 0 0;
+}
+.cards_img3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 5, 0)),
+    url("media/leynis.png");
+  padding: 0 0 0 20%;
+  margin: 0 8% 0 9%;
+}
+/* ----------------------------------footer------------------------------------ */
+.footer a:hover{
+  color: var(--color-hover);
+}
+.footer {
+  position: absolute;
   width: 100%;
-  height: 110px;
-  left: 0px;
-  top: auto;
-  background: linear-gradient(90deg, #3e4424 0%, #7b920a 100%);
-  }
-  .footercontainer img {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    left: 50px;
-    top: 12px;
-    border-radius: 50%;
-  }
-  .footercontainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  footer a{
-    padding: 30px 35px;
+  height: 20%;
+  background: var(--color-principal);
+  top: end;
+  margin: 0;
+}
+.footercontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footercontainer img {
+  position: absolute;
+  width: 7%;
+  height: 65%;
+  left: 5%;
+  top: 20%;
+  border-radius: 50%;
+}
+.footer_h1 {
+  width: 30%;
+  left: 15%;
+  top: 40%;
+}
+footer a {
+  padding: 30% 10%;
   text-decoration: none;
   font-weight: bold;
   font-family: "Aclonica";
-  font-size: 30px;
-  color: rgb(255, 255, 255);
+  font-size: var(--h1);
+  color: var(--color-h2);
+}
+/* ----------------------Diseño responsive max-width: 980px------------------------ */
+
+@media only screen and (max-width: 980px){
+  .header img {
+    width: 13%;
+    height: 65%;
   }
+  .header_h1{
+    padding: 1% 0;
+    left: 18%;
+  }
+  header a {
+    padding: 30% 0 5% 35%;
+  }
+  .descripcion__p {
+    text-align: justify;
+    padding: 25% 15% 0 24%;
+    font-size: var(--parrafo);
+  }
+  .descripcion__button:hover{
+    margin-top: 30px;
+  }
+  .descripcion__button {
+    font-size: var(--parrafo);
+    margin: 20% 10%;
+  }
+  .cards{
+    padding: 10% 0 10% 0;
+  }
+  .card {
+    font-size: var(--presentacion);
+  }
+  .card_db {
+    padding: 0 10% 0 0;
+  }
+  .cards_img1 {
+    padding: 0 0 0 10%;
+    margin: 0 5% 0 5%;
+  }
+  .card_yc {
+    padding: 0 0 0 10%;
+  }
+  .cards_img2 {
+    padding: 0 0 0 20%;
+    margin: 0 4% 0 5%;
+  }
+  .card_lo {
+    padding: 0 10% 0 0;
+  }
+  .cards_img3 {
+    padding: 0 5% 0 20%;
+    margin: 0 5% 0 3%;
+  }
+  .footer img {
+    width: 14%;
+    height: 65%;
+  }
+  .footer h1{
+    width: 50%;
+    left: 22%;
+  }
+  footer a {
+    padding: 50% 0 5% 35%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header img {
+    width: 17%;
+    height: 65%;
+  }
+  header a {
+    padding: 45% 0 0 55%;
+    font-size: var(--presentacion);
+  }
+  .header_h1{
+    left: 22%;
+  }
+  .descripcion__p {
+    padding: 35% 15% 0 15%;
+    font-size: var(--presentacion);
+  }
+  .descripcion__button:hover{
+    margin-top: 10px;
+  }
+  .descripcion__button {
+    margin: 10% 0;
+  }
+  .card {
+    font-size: var(--presentacion-640px);
+  }
+  .footer img {
+    width: 18%;
+  }
+  .footer h1{
+    width: 30%;
+    left: 25%;
+
+  }
+  footer a {
+    font-size: var(--presentacion);
+    padding: 80% 0 0 55%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header__container {
+    display: inline-block;
+    flex-direction: column;
+  }
+  .header img {
+   display: none;
+  }
+  .header_h1{
+    position: absolute;
+    padding: 2% 0 0 15%;
+    font-size: var(--h1);
+  }
+  .header a{
+    padding: 70% 0;
+    margin: 10% 5% 3% 100%;
+  }
+  .descripcion__p {
+    padding: 40% 10% 0 15%;
+  }
+  .descripcion__button:hover{
+    margin-top: 150px;
+  }
+  .descripcion__button {
+    margin: 80% 0;
+  }
+  .descripcion {
+    width: 100%;
+    height: 55vh;
+  }
+  .card_img {
+    height: 200px;
+    width: 350px;
+  }
+  .card {
+    font-size: var(--presentacion-480);
+  }
+  .footer img {
+    width: 30%;
+  }
+  .footer h1{
+    width: 30%;
+    left: 36%;
+  }
+  footer a {
+    font-size: var(--presentacion);
+    padding: 123% 0 0 55%;
+  }
+}
