@@ -16,9 +16,6 @@
     --md:16px;
     --lg: 18px;
   }
-body{
-    
-}
 #body{
     margin: 0;
     font-family: "Quicksand", sans-serif;
@@ -90,15 +87,18 @@ body{
 h1{
     text-align: center;
 }
+@media (max-width: 640px) {
+    #body {
+        display: block;
+    }
 
     </style>
 </head>
 <body id="body">
     <div class="registro">
         <div class="form-container">
-
             <form action="/" class="form"> 
-                <h1>Registro</h1>
+                <h1>Registrate</h1>
 
                 <legend>Crea una cuenta de <b>Agrocog Colombia</b></legend><br>
 
@@ -114,9 +114,7 @@ h1{
                 <input type="submit" value="Crear Cuenta" class="primary-button Crear-button">
             
             </form>
-
         </div>
-
     </div>
 </body>
 </html>
