@@ -13,6 +13,7 @@
  
  Yohan Andres Chalaca
  Encargado de realizar:
+ 1. catalogos y formularios de catalogos.
   
 
  Leinys Marìa Orozco Sayas 
