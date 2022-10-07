@@ -8,13 +8,7 @@
   --color-titulos: #f6b900;
   --color-h2: rgb(255, 255, 255);
   --color-parrafo: rgb(15, 14, 14);
-  --h1: 28px;
-  --parrafo: 25px;
-  --presentacion-480: 14px;
-  --presentacion-640px: 17px;
-  --presentacion: 20px;
   --color-hover:rgb(56, 250, 31);
-  
 }
 html {
   scroll-behavior: smooth;
@@ -22,67 +16,62 @@ html {
 body {
   font-family: "Aclonica";
 }
-/* -------------------------Header--------------------- */
+/* ------------------------------------Header------------------------------------ */
 header a:hover{
   color: var(--color-hover);
 }
 .header {
   position: absolute;
   width: 100%;
-  height: 17%;
+  height: 20%;
   top: 0px;
   background: var(--color-principal);
-  margin: 0;
 }
 .header__container {
   display: flex;
   flex-direction: row;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
 }
-.header img {
+.header__logo {
   position: absolute;
   width: 6%;
-  height: 65%;
-  left: 3%;
-  top: 12px;
+  left: 2%;
+  top: 8%;
   border-radius: 50%;
 }
 .header_h1 {
   position: absolute;
   width: 10%;
-  left: 12%;
+  left: 10%;
   top: 20%;
   font-family: "Aclonica";
-  font-size: var(--h1);
-  line-height: 25px;
+  line-height: auto;
   color: var(--color-titulos);
 }
 nav {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  top: 20%;
   padding-bottom: 0;
-  padding-right: 190px;
-  margin: 0;
+  padding-right: 10px;
+  margin: 10%;
 }
-header a {
+.nav a{
   padding: 22% 10%;
   text-decoration: none;
   font-weight: bold;
   font-family: "Aclonica";
-  font-size: var(--h1);
   color: var(--color-h2);
 }
 /* -------------------------Seccion presentacion de la empresa--------------------- */
 .descripcion {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  flex-direction: column;
+}
+.descripcion__img {
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.1),
@@ -92,52 +81,47 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin: 5% 0 0 0;
+  margin: 0;
 }
-.descripcion__p {
-  color: rgb(15, 14, 14);
-  width: 95%;
-  height: 55%;
-  padding: 10% 13% 5% 43%;
-  font-size: var(--parrafo);
+.descripcion__parrafo{
+  position: absolute;
+  text-align: center;
+  color: var(--color-parrafo);
+  width: 43%;
+  margin: 14% 10% 0 43%;
 }
 .descripcion__button:hover{
   cursor: pointer;
   box-shadow: 10px 5px 5px;
   transition: 500ms;
-  margin-top: 100px;
+  margin-top: 35px;
 }
 .descripcion__button {
-  font-size: var(--parrafo);
   font-weight: bold;
   font-family: "Aclonica";
   padding: 10px 30px;
-  margin: 50% 100%;
+  margin: 8%;
   border-radius: 15px;
   border: 2px solid rgba(0, 0, 0, 0.3);
   box-shadow: 5px 2px 20px rgb(255, 255, 255);
   color: var(--color-h2);
   background: var(--color-principal);
 }
-/* ---------------------------seccion presentacion de integrantes-------------------------- */
+/* -----------------------------------seccion presentacion de integrantes---------------------------------- */
 .cards {
   width: 100%;
-  height: auto;
-  padding: 10% 0 10% 10%;
+  padding: 8%;
 }
-.cards_h1 {
+.cards_titulo {
   text-align: center;
-  font-size: var(--h1);
-  color: rgb(0, 0, 0);
+  color: var(--color-parrafo)
 }
 .card {
-  font-size: var(--presentacion);
+  font-size: 3vh;
+  margin-top: 5%;
   display: flex;
   justify-content: normal;
   text-align: justify;
-}
-.card_db {
-  padding: 0 25% 0 0;
 }
 .card_img {
   background-size: cover;
@@ -145,43 +129,48 @@ header a {
   height: 300px;
   width: 450px;
 }
-.cards_img1 {
+/* ---------------- presentacion de Dario Bonilla------------------- */
+.card_dario {
+  padding: 0 25% 0 0;
+}
+.cards_imgdario {
   background-image: url("media/dario.png");
   padding: 0 0 0 20%;
   margin: 0 8% 0 9%;
 }
-.card_yc {
+/* ---------------- presentacion de Yohan Chalaca------------------- */
+.card_yohan {
   padding: 0 20% 0 12%;
 }
-.cards_img2 {
+.cards_imgyohan {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 5, 0)),
     url("media/yohan.png");
   padding: 0 0 0 20%;
   margin: 0 5% 0 10%;
 }
-.card_lo {
+/* ---------------- presentacion de Leynis Orozco------------------- */
+.card_leynis {
   padding: 0 25% 0 0;
 }
-.cards_img3 {
+.cards_imgleynis {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 5, 0)),
     url("media/leynis.png");
   padding: 0 0 0 20%;
   margin: 0 8% 0 9%;
 }
-/* ----------------------------------footer------------------------------------ */
+/* -----------------------------------------footer------------------------------------------------ */
 .footer a:hover{
   color: var(--color-hover);
 }
 .footer {
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 30%;
   background: var(--color-principal);
-  top: end;
-  margin: 0;
 }
 .footercontainer {
   display: flex;
+  height: 10%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -189,173 +178,189 @@ header a {
 .footercontainer img {
   position: absolute;
   width: 7%;
-  height: 65%;
+  height: auto;
   left: 5%;
   top: 20%;
   border-radius: 50%;
 }
 .footer_h1 {
+  position: absolute;
   width: 30%;
-  left: 15%;
+  left: 14%;
   top: 40%;
+  color: var(--color-titulos);
 }
-footer a {
+.footernav a {
   padding: 30% 10%;
+  margin-top: 120%;
   text-decoration: none;
   font-weight: bold;
   font-family: "Aclonica";
-  font-size: var(--h1);
   color: var(--color-h2);
 }
-/* ----------------------Diseño responsive max-width: 980px------------------------ */
-
+/* --------------------------------Diseño responsive max-width: 980px--------------------------------- */
+/* -----------computadora con pantalla pequeña-------------- */
 @media only screen and (max-width: 980px){
-  .header img {
-    width: 13%;
-    height: 65%;
+  /* -----------header---------- */
+  .header__logo {
+    width: 8%;
+    height: auto;
   }
   .header_h1{
-    padding: 1% 0;
-    left: 18%;
+    left: 12%;
   }
-  header a {
-    padding: 30% 0 5% 35%;
+  /* Seccion presentacion de la empresa*/
+  .descripcion__parrafo{
+    width: 50%;
+    margin: 18% 10% 0 25%;
   }
-  .descripcion__p {
-    text-align: justify;
-    padding: 25% 15% 0 24%;
-    font-size: var(--parrafo);
-  }
-  .descripcion__button:hover{
-    margin-top: 30px;
-  }
-  .descripcion__button {
-    font-size: var(--parrafo);
-    margin: 20% 10%;
-  }
-  .cards{
-    padding: 10% 0 10% 0;
-  }
+  /* Seccion presentacion integrantes*/
   .card {
-    font-size: var(--presentacion);
-  }
-  .card_db {
-    padding: 0 10% 0 0;
-  }
-  .cards_img1 {
-    padding: 0 0 0 10%;
-    margin: 0 5% 0 5%;
+    font-size: 2vw;
   }
   .card_yc {
     padding: 0 0 0 10%;
   }
-  .cards_img2 {
-    padding: 0 0 0 20%;
-    margin: 0 4% 0 5%;
-  }
-  .card_lo {
-    padding: 0 10% 0 0;
-  }
-  .cards_img3 {
+  .cards_imgleynis {
     padding: 0 5% 0 20%;
-    margin: 0 5% 0 3%;
   }
-  .footer img {
-    width: 14%;
-    height: 65%;
+  /* --------footer---------- */
+  .footercontainer img {
+    width: 10%;
+    height: auto;
   }
   .footer h1{
     width: 50%;
-    left: 22%;
-  }
-  footer a {
-    padding: 50% 0 5% 35%;
+    left: 20%;
   }
 }
-@media only screen and (max-width: 640px) {
+/* -----------table-------------- */
+ @media only screen and (max-width: 640px) {
+  /* -----------header---------- */
   .header img {
-    width: 17%;
-    height: 65%;
-  }
-  header a {
-    padding: 45% 0 0 55%;
-    font-size: var(--presentacion);
+    width: 14%;
+    height: auto;
   }
   .header_h1{
-    left: 22%;
+    left: 20%;
   }
-  .descripcion__p {
-    padding: 35% 15% 0 15%;
-    font-size: var(--presentacion);
+  /* Seccion presentacion de la empresa*/
+  .descripcion__parrafo{
+    width: 70%;
+    margin: 22% 10% 0 15%;
   }
-  .descripcion__button:hover{
-    margin-top: 10px;
-  }
-  .descripcion__button {
-    margin: 10% 0;
-  }
+  /* Seccion presentacion integrantes*/
   .card {
-    font-size: var(--presentacion-640px);
+    font-size: 2.5vh;
   }
-  .footer img {
-    width: 18%;
+  .card_img {
+    height: 150px;
+    width: 150px;
+  }
+  .card_dario {
+    padding: 0 10% 0 0;
+  }
+  .card_yohan {
+    padding: 0 6% 0 15%;
+  }
+  .cards_imgyohan {
+    margin: 0 5% 0 6%;
+  }
+  .card_leynis {
+    padding: 0 10% 0 0;
+  }
+  .cards_imgleynis {
+    margin: 0 6% 0 4%;
+  }
+  /* --------footer---------- */
+  .footercontainer img{
+    width: 16%;
   }
   .footer h1{
     width: 30%;
-    left: 25%;
+    left: 24%;
+    top: 30%;
 
   }
-  footer a {
-    font-size: var(--presentacion);
-    padding: 80% 0 0 55%;
-  }
 }
-@media only screen and (max-width: 480px) {
-  .header__container {
-    display: inline-block;
-    flex-direction: column;
+/* -----------Dispositivo movil-------------- */
+ @media only screen and (max-width: 414px) {
+  body{
+    width: 100%;
   }
-  .header img {
+  /* --------Header---------- */
+ .header img {
    display: none;
   }
   .header_h1{
     position: absolute;
-    padding: 2% 0 0 15%;
-    font-size: var(--h1);
+    width: 50%;
+    margin: 0 10%;
+    top: 5%;
   }
-  .header a{
-    padding: 70% 0;
-    margin: 10% 5% 3% 100%;
+  nav {
+    margin-right: 40%;
+    margin-top: 30%;
+    font-size: 2vh;
   }
-  .descripcion__p {
-    padding: 40% 10% 0 15%;
-  }
+ /* Seccion presentacion de la empresa*/
+ .descripcion__parrafo{
+  width: 90%;
+  margin: 32% 5%;
+}
   .descripcion__button:hover{
     margin-top: 150px;
-  }
-  .descripcion__button {
-    margin: 80% 0;
   }
   .descripcion {
     width: 100%;
     height: 55vh;
   }
-  .card_img {
-    height: 200px;
-    width: 350px;
+   /* Seccion presentacion integrantes*/
+   .cards {
+    margin-top: 60%;
   }
   .card {
-    font-size: var(--presentacion-480);
+    font-size: 2vh;
   }
-  .footer img {
-    width: 30%;
+  .card_img {
+    height: 100px;
+    width: 320px;
+    margin: 0;
   }
-  .footer h1{
-    width: 30%;
-    left: 36%;
+  .card_dario {
+    padding: 0 5% 0 0;
   }
-  footer a {
-    font-size: var(--presentacion);
-    padding: 123% 0 0 55%;
+  .cards_imgdario {
+    padding: 0 0 0 5%;
+    margin: 0 5% 0 1%;
   }
+  .card_yohan {
+    padding: 0 0 0 5%;
+  }
+  .cards_imgyohan {
+    padding: 0 0 0 5%;
+    margin: 0 5% 0 5%;
+  }
+  .card_leynis {
+    padding: 0 5% 0 0;
+  }
+  .cards_imgleynis {
+    padding: 0 0 0 20%;
+    margin: 0 5% 0 1%;
+  }
+/* ----Footer------ */
+.footer {
+  width: 100%;
+  height: 32%;
+  background: var(--color-principal);
 }
+  .footercontainer img {
+    width: 20%;
+  }
+  .footer_h1{
+    margin: 0 5%;
+  }
+  .footernav a {
+    margin-top: 170%;
+  }
+} 
