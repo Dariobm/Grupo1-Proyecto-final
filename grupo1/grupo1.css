@@ -107,7 +107,7 @@ nav {
   color: var(--color-h2);
   background: var(--color-principal);
 }
-/* ---------------------------seccion presentacion de integrantes-------------------------- */
+/* -----------------------------------seccion presentacion de integrantes---------------------------------- */
 .cards {
   width: 100%;
   padding: 8%;
@@ -129,6 +129,7 @@ nav {
   height: 300px;
   width: 450px;
 }
+/* ---------------- presentacion de Dario Bonilla------------------- */
 .card_dario {
   padding: 0 25% 0 0;
 }
@@ -137,6 +138,7 @@ nav {
   padding: 0 0 0 20%;
   margin: 0 8% 0 9%;
 }
+/* ---------------- presentacion de Yohan Chalaca------------------- */
 .card_yohan {
   padding: 0 20% 0 12%;
 }
@@ -146,6 +148,7 @@ nav {
   padding: 0 0 0 20%;
   margin: 0 5% 0 10%;
 }
+/* ---------------- presentacion de Leynis Orozco------------------- */
 .card_leynis {
   padding: 0 25% 0 0;
 }
@@ -155,7 +158,7 @@ nav {
   padding: 0 0 0 20%;
   margin: 0 8% 0 9%;
 }
-/* ----------------------------------footer------------------------------------ */
+/* -----------------------------------------footer------------------------------------------------ */
 .footer a:hover{
   color: var(--color-hover);
 }
@@ -195,8 +198,8 @@ nav {
   font-family: "Aclonica";
   color: var(--color-h2);
 }
-/* ----------------------Diseño responsive max-width: 980px------------------------ */
-
+/* --------------------------------Diseño responsive max-width: 980px--------------------------------- */
+/* -----------computadora con pantalla pequeña-------------- */
 @media only screen and (max-width: 980px){
   /* -----------header---------- */
   .header__logo {
@@ -231,6 +234,7 @@ nav {
     left: 20%;
   }
 }
+/* -----------table-------------- */
  @media only screen and (max-width: 640px) {
   /* -----------header---------- */
   .header img {
@@ -279,6 +283,7 @@ nav {
 
   }
 }
+/* -----------Dispositivo movil-------------- */
  @media only screen and (max-width: 414px) {
   body{
     width: 100%;
